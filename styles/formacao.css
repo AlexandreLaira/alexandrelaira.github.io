@@ -1,0 +1,160 @@
+
+.formacao{
+  background-color: #141414;
+  color: #fff;
+}
+
+.formacao .subtitulo{
+  color: #000;
+  align-self: center;
+}
+
+.formacao-texto{
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  max-width: 45ch;
+  margin-bottom: 30px;
+  color: #A3A3A3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.formacao-texto strong{
+  color: #fff;
+}
+
+.faculdade-lista ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 40px;
+}
+
+.faculdade {
+  color: #fff;
+  flex: 1;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+
+}
+
+.faculdade-tipo{
+  color: #a3A3A3;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+.faculdade-curso{
+  color: #fff;
+  flex: 1;
+}
+
+.faculdade-instituicao{
+  color: #A3A3A3;
+  font-size: 0.875rem;
+}
+
+.cursos{
+  margin-bottom: 60px;
+}
+
+.cursos h3{
+  font-size: 0.875rem;
+  color: #8f8f8f;
+  line-height: 1.4;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.cursos h3::before{
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url('../img/cursos.svg') no-repeat center center;
+  position: absolute;
+  left: -40px;
+  top: -3px;
+}
+.cursos li{
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing: 0.081rem;
+  padding-left: 12px;
+}
+
+.idiomas{
+  position: relative;
+}
+
+.idiomas h3{
+  color: #fff;
+  font-size: 0.875rem;
+  color: #8f8f8f;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.idiomas h3::before{
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url('../img/idiomas.svg') no-repeat center center;
+  position: absolute;
+  left: -40px;
+  top: -3px;
+}
+
+.idiomas li{
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing: 0.081rem;
+  padding-left: 12px;
+}
+
+.faculdade-curso::before{
+  content: '';
+  display: block;
+  width: 4px ;
+  height: 20px;
+  position: absolute;
+  background-image: linear-gradient(#b6f829, #67dd0a);
+  left: -4px;
+  top: 20px;
+}
+
+
+@media screen and (width < 680px) {
+
+  .formacao{
+    display: block;
+    padding: 10px;
+  }
+
+  .formacao .subtitulo{
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    max-width: 100%;
+    padding: 10px 30px;
+    text-align: center;
+    color: #2F4F4F;
+  }
+
+  .cursos h3::before{
+    position: initial;
+  }
+
+  .idiomas h3::before{
+    position: initial;
+  }
+  
+}
